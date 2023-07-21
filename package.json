@@ -1,0 +1,30 @@
+{
+  "name": "google-img.js",
+  "version": "1.0.0",
+  "description": "Search images using Google Custom Search Engine API",
+  "license": "MIT",
+  "author": "Mendo6472",
+  "repository": "https://github.com/Mendo6472/google-img.js",
+  "keywords": [
+    "google",
+    "images",
+    "google images",
+    "image search"
+  ],
+  "scripts": {
+    "test": "npx ava"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "ava": "^5.3.1",
+    "nock": "^13.3.2"
+  }
+}
