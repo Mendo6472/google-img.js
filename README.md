@@ -19,11 +19,11 @@ $ npm install --save google-img.js
 **Note**: You'll need to [set up your own Google Custom Search Engine](#set-up-google-custom-search-engine) to execute queries.
 
 ```js
-const GoogleImages = require('google-img.js');
+const {Client} = require('google-img.js');
 
-const client = new GoogleImages('CSE ID', 'API KEY');
+const google = new Client('CSE ID', 'API KEY');
 
-client.search('Steve Angello')
+google.search('Steve Angello')
 	.then(images => {
 		/*
 		[{
@@ -42,10 +42,10 @@ client.search('Steve Angello')
 	});
 
 // paginate results
-client.search('Steve Angello', {page: 2});
+google.search('Steve Angello', {page: 2});
 
 // search for certain size
-client.search('Steve Angello', {size: 'large'});
+google.search('Steve Angello', {size: 'large'});
 ```
 
 
