@@ -41,11 +41,26 @@ google.search('Steve Angello')
 		 */
 	});
 
+// safe search (Off by default)
+google.search('Steve Angello', {safe: 'active'})
+
 // paginate results
 google.search('Steve Angello', {page: 2});
 
 // search for certain size
 google.search('Steve Angello', {size: 'large'});
+
+// search specific image type
+google.search('Steve Angello', {type: 'face'})
+
+// search specific dominant color
+google.search('Steve Angello', {dominantColor: 'black'})
+
+// search specific color type like transparent
+google.search('Steve Angello', {colorType: 'trans'})
+
+// when searching with multiple options, remember to separate each option with a comma
+google.search('Steve Angello', {safe: 'active', dominantColor: 'blue'})
 ```
 
 
