@@ -1,6 +1,6 @@
 'use strict';
 //	Recreating google-images npm using node-fetch instead of got because of a vulnerability
-const qs = require('querystring');
+require("core-js/modules/web.url");
 
 const fetch = (...args) =>
   import('node-fetch').then(({ default: fetch }) => fetch(...args));
@@ -84,7 +84,7 @@ class Client {
 			result.safe = options.safe;
 		}
 
-		return qs.stringify(result);
+		return new URLSearchParams(result).toString();
 	}
 }
 module.exports = {

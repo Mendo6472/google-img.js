@@ -1,6 +1,6 @@
 {
   "name": "google-img.js",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Search images using Google Custom Search Engine API",
   "license": "MIT",
   "author": "Mendo6472",
@@ -21,6 +21,7 @@
     "index.js"
   ],
   "dependencies": {
+    "core-js": "^3.32.1",
     "node-fetch": "^3.3.1"
   },
   "devDependencies": {
